@@ -10,4 +10,12 @@ export default class Logger {
             )} - ${message}`
         )
     }
+
+    static error(message: string) {
+        console.log(
+            `${chalk.blue('[LOG]')} ${chalk.blue(
+                moment().format('YYYY-MM-DD HH:mm:ss')
+            )} - ${chalk.red(message)}`
+        )
+    }
 }

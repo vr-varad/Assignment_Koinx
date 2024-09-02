@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "build": "npx tsc",
     "prepare": "husky"
   },
   "author": "Varad Gupta",
@@ -14,6 +16,9 @@
   "description": "",
   "devDependencies": {
     "husky": "^9.1.5",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }

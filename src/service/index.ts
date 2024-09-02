@@ -1,3 +1,4 @@
 import TransactionService from './transaction-service'
+import EthereumService from './ethereum-service'
 
-export { TransactionService }
+export { TransactionService, EthereumService }

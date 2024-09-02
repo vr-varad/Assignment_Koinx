@@ -14,6 +14,23 @@ class TransactionRepository {
             throw new ApiError('Database Error', 500, (error as Error).message)
         }
     }
+
+    async GetUser(address: string) {
+        try {
+            const user = await Transaction.findOne({ address: address })
+            if (!user) {
+                return {
+                    success: false
+                }
+            }
+            return {
+                success: true,
+                user
+            }
+        } catch (error) {
+            throw new ApiError('Database Error', 500, (error as Error).message)
+        }
+    }
 }
 
 export default TransactionRepository

@@ -1,6 +1,6 @@
 import express, { Application } from 'express'
 import cors from 'cors'
-import { Transaction } from './api'
+import { Ethereum, Transaction } from './api'
 
 // eslint-disable-next-line @typescript-eslint/require-await
 const expressApp = async (app: Application) => {
@@ -9,6 +9,7 @@ const expressApp = async (app: Application) => {
     app.use(cors())
 
     Transaction(app)
+    Ethereum(app)
 }
 
 export default expressApp

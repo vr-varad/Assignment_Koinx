@@ -1,3 +1,4 @@
 import Transaction from './transaction'
+import Ethereum from './ethereum'
 
-export { Transaction }
+export { Transaction, Ethereum }

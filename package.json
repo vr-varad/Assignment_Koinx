@@ -26,6 +26,7 @@
         "@commitlint/config-conventional": "^19.4.1",
         "@eslint/js": "^9.9.1",
         "@types/eslint__js": "^8.42.3",
+        "@types/ioredis": "^4.28.10",
         "@types/node-cron": "^3.0.11",
         "eslint": "^9.9.1",
         "eslint-config-prettier": "^9.1.0",
@@ -40,14 +41,17 @@
     "dependencies": {
         "@types/cors": "^2.8.17",
         "@types/express": "^4.17.21",
+        "@types/redis": "^4.0.10",
         "axios": "^1.7.7",
         "chalk": "^4.1.0",
         "cors": "^2.8.5",
         "cross-env": "^7.0.3",
         "dotenv-flow": "^4.1.0",
         "express": "^4.19.2",
+        "ioredis": "^5.4.1",
         "moment": "^2.30.1",
         "mongoose": "^8.6.0",
-        "node-cron": "^3.0.3"
+        "node-cron": "^3.0.3",
+        "redis": "^4.7.0"
     }
 }
